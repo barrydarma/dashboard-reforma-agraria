@@ -1,4 +1,0 @@
-cd ~/Desktop/dashboard-reforma-agraria
-git add -A
-git commit -m “ubah komen”
-git push
