@@ -4,15 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <meta name="author" content="barry">
-    <link rel="icon" href="../../../../favicon.ico">
+    <meta name="barrydarma" content="dashboard_reforma_agraria">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link href="./src/css/open-iconic-bootstrap.css" rel="stylesheet">
     <title>Reforma Agraria Dashboard</title>
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap-4.0.0-beta/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="dashboard.css" rel="stylesheet">
+    <link href="./src/css/dashboard.css" rel="stylesheet">
 </head>
 
 <body>
@@ -484,22 +483,18 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="./src/js/vendor/jquery-slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    
     <script>
-        window.jQuery || document.write('<script src="bootstrap-4.0.0-beta/assets/js/vendor/jquery.min.js"><\/script>')
+        window.jQuery || document.write('<script src="./src/js/jquery-3.2.1.js"><\/script>')
     </script>
-    <script src="bootstrap-4.0.0-beta/assets/js/vendor/popper.min.js"></script>
-    <script src="bootstrap-4.0.0-beta/dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script>    
-            $(document).ready(function() {
-          // call the tablesorter plugin
-          $("[data-sort=table]").tablesorter({
-            // Sort on the second column, in ascending order
-            sortList: [[1,0]]
-          });
-        });
+    <script src="./src/js/vendor/popper.min.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+    <script type="text/javascipt" src="./src/main.js">    
+        
     </script>
     
 </body>

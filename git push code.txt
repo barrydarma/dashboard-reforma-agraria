@@ -1,0 +1,4 @@
+cd ~/Desktop/dashboard-reforma-agraria
+git add -A
+git commit -m "Minimize source"
+git push
