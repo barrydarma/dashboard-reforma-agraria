@@ -9,6 +9,7 @@ body {
     padding-top: 3.5rem;
     font-family: roboto;
     background-color: #EEEEEE;
+    
 }
 
 /*
@@ -63,7 +64,9 @@ h1 {
     border-radius: 0;
 }
 
-.nav .nav-item {}
+.nav .nav-item {
+    
+}
 
 .nav .nav-item .nav-link {
     color: aliceblue;
@@ -71,7 +74,7 @@ h1 {
     font-style: normal;
 }
 
-.agenda_kegiatan svg {
+.agenda_kegiatan img {
     width: 215px;
 }
 
@@ -84,7 +87,11 @@ h1 {
     box-shadow: 12px 0px 8px;
 }
 
-.navbar-brand {}
+.navbar-brand {
+    float: left;
+    
+    
+}
 
 .nav-item .nav-link img {
     color: white;
@@ -97,9 +104,13 @@ h1 {
     margin-right: 1.5rem;
 }
 
-.breadcrumb {}
+.breadcrumb {
+    
+}
 
-.breadcrumb .breadcrumb-item {}
+.breadcrumb .breadcrumb-item {
+    
+}
 
 .card {
     box-shadow: 0px 3px 6px #C3C3C3;
@@ -174,3 +185,4 @@ h1 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
