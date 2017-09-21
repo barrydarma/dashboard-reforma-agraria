@@ -100,8 +100,13 @@ h4 {
     box-shadow: 12px 0px 8px;
 }
 
+.navbar-header {
+        
+}
+
 .navbar-brand {
-    float: left;    
+    float: left; 
+    
 }
 
 .nav-item .nav-link img {
@@ -116,11 +121,27 @@ h4 {
 }
 
 .breadcrumb {
-    
+    padding-left: 2rem;
+    background-color: #2196F3;
+    font-size: 15px;
+    margin: auto;    
 }
 
-.breadcrumb .breadcrumb-item {
-    
+ol.breadcrumb li a {
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
+ol.breadcrumb .active {
+    color: #fff;
+}
+
+ol.breadcrumb li a:hover {
+    color: #FFFFFF;   
+}
+
+.breadcrumb .breadcrumb-item::before {
+    color: #fff;
 }
 
 .card {

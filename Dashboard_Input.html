@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="barrydarma" content="dashboard_reforma_agraria">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./src/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <title>Reforma Agraria Dashboard</title>
+    <!-- Bootstrap core CSS -->
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="./src/css/dashboard_input.css" rel="stylesheet">
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    <script type="text/javascript" src="/src/js/jquery-latest.js"></script>
+    <script type="text/javascript" src="/src/js/jquery.tablesorter.js"></script>
+
+</head>
+
+<body>
+    <!--nav top-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#">Reforma Agraria</a>
+        </div>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="col-4">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active">Data</li>
+            </ol>
+        </div>    
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Input</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
+
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-sml btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    
+    <!--end nav top-->
+
+    <!--nav sidebar-->
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 d-none d-sm-block sidebar bg-dark">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#navbarsSide" aria-controls="navbarsSide" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><span class="oi oi-bar-chart" aria-hidden="true"></span>Dashboard<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-calendar" aria-hidden="true"></span>Agenda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-people" aria-hidden="true"></span>Tim Kerja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-map" aria-hidden="true"></span>Peta</a>
+                    </li>
+                </ul>
+
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-task" aria-hidden="true"></span>Permasalahan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-list" aria-hidden="true"></span>Pustaka</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span class="oi oi-document" aria-hidden="true"></span>Laporan pertemuan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Another nav item</a>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nav item again</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">One more nav</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Another nav item</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--end nav sidebar-->
+
+            <!--start main class-->
+            <main class="col-sm-9 ml-sm-auto col-md-10 pt-3" role="main">
+
+                <!--start section-->
+                <section class="row">
+
+                    <!--Start agenda kegiatan-->
+                    <div class="col-12 kartu">
+                        <div class="card w-100 h-100">
+                            <div class="card-body">
+                                <h4 class="card-title">Tambah Acara</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+
+                                <div class="col-sm-10">
+                                    <form>
+                                        <div class="form-group row">
+                                            <label for="inlineFormCustomSelectPref" class="col-sm-2 col-form-label">Acara</label>
+                                            <div class="col-sm-10">
+                                                <select class="custom-select mb-2 mr-sm-2 mb-sm-0 col-sm-8" id="inlineFormCustomSelectPref">
+                                            <option selected>Pilih agenda acara...</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="inputPassword3" class="col-sm-2 col-form-label">Tgl & jam</label>
+                                            <div class="col-6 col-sm-2">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Tgl">
+                                            </div>
+                                            <div class="col-6 col-sm-2">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Jam">
+                                            </div>
+                                            
+                                            <label for="tgldanJamSampai">Sampai</label>
+                                            
+                                            <div class="col-6 col-sm-2">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Tgl">
+                                            </div>
+                                            <div class="col-6 col-sm-2">
+                                                <input type="text" class="form-control" id="inputPassword3" placeholder="Jam">
+                                            </div>
+                                        </div>
+                                        <fieldset class="form-group">
+                                            <div class="row">
+                                                <legend class="col-form-legend col-sm-2">Pelaksanaan</legend>
+                                                <div class="col-sm-10">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                                        Kecamatan
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                                        Kelurahan
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                                                        Desa
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                        <div class="form-group row">
+                                            <label for="form-check-label" class="col-sm-2 col-form-label">Lokasi</label>
+                                            <div class="col">
+                                                <input type="text" class="form-control" id="inputTempat" placeholder="Lokasi">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">Keterangan</label>
+                                            <div class="col">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                            </div>
+                                        </div>    
+                                        <div class="form-group row">
+                                            <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label"></label>
+                                            <div class="col-4 col-sm-2">
+                                                <button type="submit" class="btn btn-primary">Simpan</button>
+                                            </div>
+                                            <div class="col-4 col-sm-2">
+                                                <button type="submit" class="btn btn-primary">Hapus</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--end agenda acara-->
+
+                </section>
+                <!--end fo section-->
+
+            </main>
+            <!--end of main class-->
+        </div>
+    </div>
+    <!--end side bar fluid-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./src/js/jquery.js"></script>
+    <script src="./src/main.js"></script>
+    <script src="./src/js/vendor/popper.min.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug 
+    <script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+
+
+</body>
+
+</html>
