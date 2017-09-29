@@ -82,7 +82,7 @@ h4 {
 }
 
 .nav .nav-item .nav-link {
-    color: aliceblue;
+    color: azure;
     font-size: 14px;
     font-style: normal;
 }
@@ -112,7 +112,7 @@ h4 {
 }
 
 .nav-link .oi {
-    margin-right: 1.5rem;
+    margin-right: 1em;
 }
 
 .breadcrumb {

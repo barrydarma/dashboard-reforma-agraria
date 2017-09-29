@@ -8,7 +8,8 @@
 body {
     padding-top: 3.5rem;
     font-family: roboto;
-    background-color: #EEEEEE; 
+    background-color: #EEEEEE;
+    
 }
 
 section {
@@ -18,6 +19,8 @@ section {
 /*
  * Typography
  */
+
+
 
 h1 {
     margin-bottom: 20px;
@@ -82,13 +85,30 @@ h4 {
 }
 
 .nav .nav-item .nav-link {
-    color: aliceblue;
-    font-size: 14px;
+    color: rgba(255,255,255,.5);
+    font-size: 14px;        
     font-style: normal;
 }
 
+.nav .nav-item .active {
+    color: #FFF;   
+}
+
+.nav .nav-item .nav-link:hover {
+    color: #e5e5e5;   
+}
+
+
 .agenda_kegiatan img {
     width: 215px;
+}
+
+/*search nav sidebar*/
+
+.bd-search {
+    position: relative;
+    padding: 1rem 15px;
+    border-bottom: 1px solid rgba(0,0,0,.05);
 }
 
 /*
@@ -96,7 +116,7 @@ h4 {
  */
 
 .navbar {
-    background-color: #2196F3;
+    background-color: #1E88E5;
     box-shadow: 12px 0px 8px;
 }
 
@@ -105,8 +125,7 @@ h4 {
 }
 
 .navbar-brand {
-    float: left; 
-    
+    float: left;
 }
 
 .nav-item .nav-link img {
@@ -117,19 +136,22 @@ h4 {
 }
 
 .nav-link .oi {
-    margin-right: 1.5rem;
+    margin-right: 1em;
 }
+
+
+/*breadcrum*/
 
 .breadcrumb {
     padding-left: 2rem;
-    background-color: #2196F3;
+    background-color: #1E88E5;
     font-size: 15px;
     margin: auto;    
 }
 
 ol.breadcrumb li a {
     text-decoration: none;
-    color: #E0E0E0;
+    color: rgba(255,255,255,.5);
 }
 
 ol.breadcrumb .active {
@@ -141,7 +163,7 @@ ol.breadcrumb li a:hover {
 }
 
 .breadcrumb .breadcrumb-item::before {
-    color: #fff;
+    color: rgba(255,255,255,.5);
 }
 
 .card {
@@ -216,4 +238,8 @@ ol.breadcrumb li a:hover {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
+/*button upload*/
+
+
 
