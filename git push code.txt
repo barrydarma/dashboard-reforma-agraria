@@ -1,4 +1,4 @@
 cd ~/Desktop/dashboard-reforma-agraria
 git add -A
-git commit -m "update input, fix display bug, fix button, fix mobile display, fix tablet dispay"
+git commit -m "update input, fix display bug, fix button, fix mobile display, fix tablet dispay update"
 git push

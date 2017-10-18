@@ -145,7 +145,7 @@ h4 {
 .breadcrumb {
     padding-left: 2rem;
     background-color: #1E88E5;
-    font-size: 15px;
+    font-size: 12px;
     margin: auto;    
 }
 
@@ -243,3 +243,16 @@ ol.breadcrumb li a:hover {
 
 
 
+
+@media(max-width:980px){
+    #navbarsMenu .navbar-nav{
+        display: none !important;
+    }
+    #navbarsMenu.show .navbar-nav, #navbarsMenu.collapsing .navbar-nav{
+        display: flex !important;
+    }
+    #breadcrumb-container {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
